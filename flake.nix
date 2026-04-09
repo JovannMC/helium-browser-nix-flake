@@ -152,6 +152,8 @@
                 libvdpau
                 libva
                 pipewire
+                libpulseaudio
+                alsa-lib
               ])}" \
                 --add-flags "--ozone-platform-hint=auto" \
                 --add-flags "--enable-features=WaylandWindowDecorations" \
