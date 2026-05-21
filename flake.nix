@@ -19,8 +19,8 @@
         };
 
         versions = {
-          linux = "0.10.8.1";
-          darwin = "0.10.8.1";
+          linux = "0.12.4.1";
+          darwin = "0.12.3.1";
         };
 
         version = if pkgs.stdenv.isDarwin then versions.darwin else versions.linux;
@@ -28,19 +28,19 @@
         srcs = {
           x86_64-linux = {
             url = "https://github.com/imputnet/helium-linux/releases/download/${versions.linux}/helium-${versions.linux}-x86_64_linux.tar.xz";
-            hash = "sha256-qu0GvCbg4Eq1cHrTerOzH98KkL0FCSVQgLe+QWyH9d4=";
+            hash = "sha256-cBqVVImuvEqUeK7QgM5+FB1q4w/cnCcwT8DXPweV4Lg=";
           };
           aarch64-linux = {
             url = "https://github.com/imputnet/helium-linux/releases/download/${versions.linux}/helium-${versions.linux}-arm64_linux.tar.xz";
-            hash = "sha256-URHCxVn66QQaj54LeXrdFyr2Nb9xqVManTCZPjw2fZI=";
+            hash = "sha256-p4aPqMcPA04e5rh9a5WB2FyD1bwfVBR2O2YibkSIIo4=";
           };
           x86_64-darwin = {
             url = "https://github.com/imputnet/helium-macos/releases/download/${versions.darwin}/helium_${versions.darwin}_x86_64-macos.dmg";
-            hash = "sha256-rYEjxtRi5E+1RyHmc3t1SjS0LcLKCg+0TlXZxqmMoA4=";
+            hash = "sha256-8L0svl4gmUIbVF6C5TGpyivNXPsVIGyKPEydHf+GY0E=";
           };
           aarch64-darwin = {
             url = "https://github.com/imputnet/helium-macos/releases/download/${versions.darwin}/helium_${versions.darwin}_arm64-macos.dmg";
-            hash = "sha256-DWmTwNKtg+1dVbWcbP95Iym0GhUCi+CaeaurNaHBEE8=";
+            hash = "sha256-BrbexBlCQh9htQEy4Wiul/oNSn2MVERoqpLT8VRLENM=";
           };
         };
 
